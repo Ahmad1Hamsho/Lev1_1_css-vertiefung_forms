@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lev1_1_css-vertiefung_forms</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main>
+      <form id="lev1-1-forms">
+        <div>
+          <label for="vorname">Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            required
+            placeholder="Vorname"
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            required
+            placeholder="Nachname"
+          />
+        </div>
+        <div>
+          <label for="email">E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="on"
+            pattern=".+@gmail.com"
+            size="30"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="thema">Thema</label>
+          <input list="thema" name="thema" />
+          <datalist id="thema">
+            <option value="General"></option>
+            <option value="Advertise"> </option>
+            <option value=" Partnership"> </option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="nachricht">Nachricht</label>
+          <textarea
+            name="nachricht"
+            id="nachricht"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+main {
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+label {
+  width: 30vw;
+  height: 3vh;
+}
+input {
+  margin-bottom: 2vh;
+}
+input[type="submit"] {
+  width: 60vw;
+  height: 5vh;
+  background-color: #4894a2;
+  color: white;
+}
+input[type="submit"]:hover {
+  background-color: black;
+}
+label {
+  display: block;
+  font-weight: bolder;
+}
+
+label:after {
+  content: "*";
+  color: red;
+}
+label[for="thema"]:after {
+  content: "";
+}
